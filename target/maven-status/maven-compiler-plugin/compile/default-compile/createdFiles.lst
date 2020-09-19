@@ -1,0 +1,6 @@
+com\devaugusto\docsgenerator\utils\DummyData.class
+com\devaugusto\docsgenerator\controller\HeaderNFooter.class
+com\devaugusto\docsgenerator\model\Columns.class
+com\devaugusto\docsgenerator\model\Columns$ColumnsBuilder.class
+com\devaugusto\docsgenerator\Demo.class
+com\devaugusto\docsgenerator\controller\ExcelController.class
