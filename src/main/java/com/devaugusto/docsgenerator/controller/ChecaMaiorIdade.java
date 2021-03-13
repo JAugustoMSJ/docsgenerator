@@ -23,7 +23,7 @@ public class ChecaMaiorIdade implements ChecaIdade{
     public boolean checaIdade(Date dataNasc) {
         sdf = new SimpleDateFormat("dd/MM/yyyy");
         try {
-            dataAtual = sdf.parse("03/03/2021");
+            dataAtual = sdf.parse("13/03/2021");
             int ano = dataAtual.getYear() - dataNasc.getYear();
             if(ano > 18)
                  return true;

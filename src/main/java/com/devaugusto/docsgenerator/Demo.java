@@ -14,7 +14,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.text.ParseException;
 import java.util.List;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.xwpf.usermodel.ParagraphAlignment;
@@ -45,7 +44,7 @@ public class Demo {
           f.mkdirs();
         }
 
-        for(int i = 0; i < 10; i++){
+        for(int i = 0; i < records.size(); i++){
         doc = new XWPFDocument();
 //        Para alunos menores
         file[i] = records.get(i).getTurmaInteiro()
@@ -89,8 +88,8 @@ public class Demo {
              +", inscrito(a) sob o CPF nº.: "+records.get(i).getCpfMae()
              +", responsável pelo aluno(a) "+records.get(i).getNomeAluno()
              .trim().toUpperCase()+", turma: "+records.get(i).getTurmaInteiro()
-             +", matriculado na Unidade Escolar Colégio Estadual "
-             + "Professora Alvina Valério da Silva, sob a matrícula: "
+             +", matriculado na Unidade Escolar COLÉGIO ESTADUAL PROFESSORA "
+             + "ALVINA VALÉRIO DA SILVA, sob a matrícula: "
              +records.get(i).getMatriculaAluno()+", declaro estar recebendo"
              + " um Kit de gêneros alimentícios, contendo: "
              + dummyData.getKIT() + dummyData.getLAST_TEXT());

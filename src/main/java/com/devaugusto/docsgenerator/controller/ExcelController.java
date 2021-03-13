@@ -35,7 +35,7 @@ public class ExcelController {
         Workbook workbook = new XSSFWorkbook(file);
         
 //      Choosing sheet
-        Sheet sheet = workbook.getSheetAt(6);
+        Sheet sheet = workbook.getSheetAt(7);
         
         List<Row> rows = (List<Row>) toList(sheet.iterator());
 //      Ignoring first row
